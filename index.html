@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ignacio Correa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="./portfolio.css" />
+  <link rel="stylesheet" href="./styles.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
@@ -20,13 +20,16 @@
         <ul class="navbar-nav ms-auto">
            
           <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#welcome-section">Inicio</a>
+            <div class="nav-link text-white" id="idioma"></div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#welcome-section" id="nav-1"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-white" href="#projects">Proyectos</a>
+              <a class="nav-link  text-white" href="#projects" id="nav-2"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-white" href="#contacto">Contacto</a>
+              <a class="nav-link  text-white" href="#contacto" id="nav-3"></a>
             </li>
           </ul>
         </div>
@@ -37,18 +40,18 @@
     <div class="bg-inicio text-white">
       <div class="py-3" id="welcome-section"></div>
     <section class="fullscreen">
-      <h1 class="display-3 text-center spc-yt titulo">Bienvenidos a mi portfolio!</h1>
+      <h1 class="display-3 text-center spc-yt titulo" id="home-1"></h1>
       <div id="btn-mas">
         <img src="https://i.ibb.co/XYvN7rv/perfil.jpg" alt="..." class="rounded-circle perfil spc-mtb">
       </div>
-        <h2 class="display-5 text-center spc-y subtitulo">Te cuento un poco sobre mi</h2>
+        <h2 class="display-5 text-center spc-y subtitulo" id="home-2"></h2>
         <div class="mx-info">
           <ul class="list-group">
             
-            <p class="texto"> Me llamo Ignacio Correa, resido en Buenos Aires, Argentina y tengo 27 años.</p>
-            <p class="texto">Actualmente me encuentro estudiando programacion web, poseo conocimiento en HTML, CSS, y JavaScript, ademas del manejo de librerias como Boostrap y React.</p>
-            <p class="texto">Busco desarrollarme profesionalmente en el mundo de la programacion, ejercitando mis habilidades actuales y adquiriendo nuevos conocimientos en otros lenguajes, como Python y Java.</p>
-            <p class="texto spc-y">Soy una persona con grandes habilidades de adaptacion, a la hora de trabajar en equipo considero que la comunicacion y el respeto son fundamentales. Me considero una persona detallista. He trabajado por muchos años en la atencion y servicio al cliente, lo que me brindo habilidades interpersonales.</p>
+            <p class="texto" id="home-3"></p>
+            <p class="texto" id="home-4"></p>
+            <p class="texto" id="home-5"></p>
+            <p class="texto spc-y" id="home-6"></p>
             
               
             </div>
@@ -59,7 +62,7 @@
       <div class="accordion bg-inicio spc-y" id="accordionPanelsStayOpenExample">
         <div class="accordion-item bg-inicio">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <button id="accord-1" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
               Mis certificaciones
             </button>
           </h2>
@@ -72,10 +75,13 @@
                     <a href="" target="_blank">Argentina Programa #3</a>
                   </li>
                   <li>
-                    <a href="https://www.freecodecamp.org/certification/Igniske/responsive-web-design" target="_blank">Diseño web adaptable en FCC</a>
+                    <a href="https://www.freecodecamp.org/certification/Igniske/responsive-web-design" target="_blank" id="cert-1"></a>
                   </li>
                   <li>
-                  <a href="https://www.freecodecamp.org/certification/Igniske/javascript-algorithms-and-data-structures" target="_blank">Algoritmos y estructura de datos con JavaScript en FCC</a>
+                    <a href="https://www.freecodecamp.org/certification/Igniske/javascript-algorithms-and-data-structures" target="_blank" id="cert-2"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.freecodecamp.org/certification/Igniske/front-end-development-libraries" target="_blank" id="cert-3"></a>
                   </li>
                 </ul>
               </div>
@@ -90,7 +96,7 @@
        
         <div class="accordion-item bg-inicio">
           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <button id="accord-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
               Mis habilidades tecnicas
             </button>
           </h2>
@@ -171,14 +177,14 @@
       <!-- *******************proyectos********************************* -->
       <div class="bg-proyectos">
       <section id="projects" class="greatscreen">
-        <h2 class="spc-y spc-yt text-white text-center display-7">Estos son algunos de los proyectos que he realizado:</h2>
+        <h2 class="spc-y spc-yt text-white text-center display-7" id="titulo-1"></h2>
         <!-- flexbox de los proyectos -->
         <div class="d-flex align-content-start flex-wrap spc-yt centrar">
           <div class="card mx-spc" style="width: 18rem;">
             <img src="https://www.svgrepo.com/show/143264/tic-tac-toe-game.svg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Juego: Tic tac toe</h5>
-              <p class="card-text">El juego de tic tac toe para dos personas.</p>
+              <h5 class="card-title" id="titulo-2"></h5>
+              <p class="card-text" id="desc-1"></p>
               <a href="https://codepen.io/Igniske/pen/GRGpbwx" target="_blank" class="btn btn-primary">Proyecto</a>
               <a href="https://github.com/Igniske/tictactoe" target="_blank" class="btn btn-primary">Codigo</a>
             </div>
@@ -186,8 +192,8 @@
           <div class="card mx-spc" style="width: 18rem;">
             <img src="https://cdn.pixabay.com/photo/2013/07/13/09/51/rock-paper-scissors-156171_960_720.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Piedra, papel o tijera</h5>
-              <p class="card-text">En este juego podrás hacer elecciones contra el programa.</p>
+              <h5 class="card-title" id="titulo-3"></h5>
+              <p class="card-text" id="desc-2"></p>
               <a href="https://codepen.io/Igniske/pen/dyKomwm" target="_blank" class="btn btn-primary">Proyecto</a>
               <a href="https://github.com/Igniske/Piedra-papel-o-tijera" target="_blank" class="btn btn-primary">Codigo</a>
             </div>
@@ -195,8 +201,8 @@
           <div class="card mx-spc" style="width: 18rem;">
             <img src="https://www.svgrepo.com/show/11231/timer.svg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">contador Pomodoro</h5>
-              <p class="card-text">Proyecto donde he creado un contador de pomodoro.</p>
+              <h5 class="card-title" id="titulo-4"></h5>
+              <p class="card-text" id="desc-3"></p>
               <a href="https://codepen.io/Igniske/pen/eYrRVGv" target="_blank" class="btn btn-primary">Proyecto</a>
               <a href="https://github.com/Igniske/pomodoro-basico" target="_blank" class="btn btn-primary">Codigo</a>
             </div>
@@ -204,8 +210,8 @@
           <div class="card mx-spc" style="width: 18rem;">
             <img src="https://www.svgrepo.com/show/43426/profile.svg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Slide de perfiles</h5>
-              <p class="card-text">Aqui he construido un slide de perfiles utilizando a mis mascotas como ejemplos.</p>
+              <h5 class="card-title" id="titulo-5"></h5>
+              <p class="card-text" id="desc-4"></p>
               <a href="https://codepen.io/Igniske/pen/NWMzowx" target="_blank" class="btn btn-primary">Proyecto</a>
               <a href="https://github.com/Igniske/Slide-de-perfiles" target="_blank" class="btn btn-primary">Codigo</a>
             </div>
@@ -213,8 +219,8 @@
           <div class="card mx-spc" style="width: 18rem;">
             <img src="https://www.svgrepo.com/show/408958/rotate-counter.svg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Contador basico</h5>
-              <p class="card-text">En este proyecto, he creado un contador que suma de a una unidad.</p>
+              <h5 class="card-title" id="titulo-6"></h5>
+              <p class="card-text"id="desc-5"></p>
               <a href="https://codepen.io/Igniske/pen/vYjrvEm" target="_blank" class="btn btn-primary">Proyecto</a>
               <a href="https://github.com/Igniske/contador" target="_blank" class="btn btn-primary">Codigo</a>
             </div>
@@ -223,8 +229,8 @@
             <div class="card mx-spc" style="width: 18rem;">
               <img src="https://cdn-icons-png.flaticon.com/512/101/101286.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Calculadora basica</h5>
-                <p class="card-text">Aun en construccion! La idea de este proyecyo es crear una calculadora.</p>
+                <h5 class="card-title" id="titulo-7"></h5>
+                <p class="card-text" id="desc-6"></p>
                 <a href="" aria-disabled="true" class="btn btn-primary ">Proyecto</a>
                 <a href="" aria-disabled="false" class="btn btn-primary">Codigo</a>
               </div>
@@ -249,7 +255,7 @@
 <!-- informacion de contacto -->
       <div class="bg-contacto contenedor">
       <footer id="contacto" class="cuarterscreen">
-        <p class="text-center text-white spc-yt texto">Gracias por tomarte el tiempo de leer mi portfolio! Lo agradezco de corazon, y espero que pronto podamos trabajar juntos.</p>
+        <p class="text-center text-white spc-yt texto" id="despedida"></p>
         <div class="ctn-redes">
           
           <a href="https://www.linkedin.com/in/ignacio-correa-a94b97246/" target="blank_"><img class="redes" src="https://i.ibb.co/VCy1XxZ/linkedin.png" alt="linkedin" border="0"></a>
@@ -267,7 +273,7 @@
         </div>
         
        
-
+            <script src="main.js"></script>
              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
 </html>
