@@ -37,7 +37,7 @@ const proTituloEsp = ["Estos son algunos de los proyectos que he realizado:",
 "Piedra, papel o tijera",
 "Contador Pomodoro",
 "Slide de perfiles",
-"Contador basico",
+"Simulador de dados",
 "Calculadora con JS"
 ]
 
@@ -46,7 +46,7 @@ const proTituloEng = ["These are some of the projects i've worked on:",
 "Rock, paper or scissors",
 "25 + 5 Clock",
 "Profile slides",
-"Basic counter",
+"Dice simulator",
 "Javascript calculator"
 ]
 
@@ -54,7 +54,7 @@ const descEsp = ["El juego de tic tac toe para dos personas.",
 "En este juego podrás hacer elecciones contra el programa.",
 "Un contador de pomodoro con tiempos intercambiables.",
 "Aqui he construido un slide de perfiles utilizando a mis mascotas como ejemplos.",
-"En este proyecto, he creado un contador que suma de a una unidad.",
+"Puedes lanzar cierta cantidad de dados e inclusive alterar su valor.",
 "Calculadora no cientifica creada con Javascript"
 ]
 
@@ -62,8 +62,40 @@ const descEng = ["The classic game Tic, tac, toe for two persons",
 "In this game you can play against the IA",
 "A 25+5 clock with interchangeable timers",
 "Here i've created a profiles slider using my pets as examples",
-"A simple counter that add one units per time",
+"You can roll any number of dices, and even change their values",
 "A non-cientific calculator made with Javascript",]
+
+const descHtmlEsp = ["HTML semantico",
+"Formularios y validaciones",
+"Convenciones y mejores prácticas"]
+
+const descHtmlEng = ["Semantic HTML",
+"Forms and validations",
+"Conventions and best practices"]
+
+const descCssEsp = ["Diseño de interfaz",
+"Diseño adaptable y consulta de medios",
+"Metodologia BEM"]
+
+const descCssEng = ["Interface design",
+"Responsive design and media queries",
+"BEM methodology"]
+
+const descJsEsp = ["Modulos de ES6",
+"Manipulacion de DOM",
+"Manejo de AJAX y APIs"]
+
+const descJsEng = ["ES6 Modules",
+"DOM manipulation",
+"AJAX and APIs management"]
+
+const descReactEsp = ["Creacion de componentes",
+"Manipulacion y alteracion de componentes",
+"Manejo de hooks"]
+
+const descReactEng = ["Components creation",
+"Management and alteration of components",
+"Hooks management"]
 
 let switchLang = true;
 
@@ -96,6 +128,34 @@ const desc4 = document.getElementById("desc-4")
 const desc5 = document.getElementById("desc-5")
 const desc6 = document.getElementById("desc-6")
 const despedida = document.getElementById("despedida")
+const html1 = document.getElementById("html-li-1")
+const html2 = document.getElementById("html-li-2")
+const html3 = document.getElementById("html-li-3")
+const css1 = document.getElementById("css-li-1")
+const css2 = document.getElementById("css-li-2")
+const css3 = document.getElementById("css-li-3")
+const js1 = document.getElementById("js-li-1")
+const js2 = document.getElementById("js-li-2")
+const js3 = document.getElementById("js-li-3")
+const react1 = document.getElementById("react-li-1")
+const react2 = document.getElementById("react-li-2")
+const react3 = document.getElementById("react-li-3")
+const boots = document.getElementById("bt-li")
+const git = document.getElementById("git-li")
+const boton1_1 = document.getElementById("boton-cambiable-1-1")
+const boton2_1 = document.getElementById("boton-cambiable-2-1")
+const boton1_2 = document.getElementById("boton-cambiable-1-2")
+const boton2_2 = document.getElementById("boton-cambiable-2-2")
+const boton1_3 = document.getElementById("boton-cambiable-1-3")
+const boton2_3 = document.getElementById("boton-cambiable-2-3")
+const boton1_4 = document.getElementById("boton-cambiable-1-4")
+const boton2_4 = document.getElementById("boton-cambiable-2-4")
+const boton1_5 = document.getElementById("boton-cambiable-1-5")
+const boton2_5 = document.getElementById("boton-cambiable-2-5")
+const boton1_6 = document.getElementById("boton-cambiable-1-6")
+const boton2_6 = document.getElementById("boton-cambiable-2-6")
+const boton3 = document.getElementById("boton-cambiable-3")
+
 
 langSwitcher();
 
@@ -129,6 +189,33 @@ function langSwitcher(){
         desc4.innerHTML = descEsp[3]
         desc5.innerHTML = descEsp[4]
         desc6.innerHTML = descEsp[5]
+        html1.innerHTML = descHtmlEsp[0]
+        html2.innerHTML = descHtmlEsp[1]
+        html3.innerHTML = descHtmlEsp[1]
+        css1.innerHTML = descCssEsp[0]
+        css2.innerHTML = descCssEsp[1]
+        css3.innerHTML = descCssEsp[2]
+        js1.innerHTML = descJsEsp[0]
+        js2.innerHTML = descJsEsp[1]
+        js3.innerHTML = descJsEsp[2]
+        react1.innerHTML = descReactEsp[0]
+        react2.innerHTML = descReactEsp[1]
+        react3.innerHTML = descReactEsp[2]
+        boots.innerHTML = "Manejo del framework"
+        git.innerHTML = "Manejo del sitio web"
+        boton1_1.innerHTML = "Proyecto"
+        boton2_1.innerHTML = "Codigo"
+        boton1_2.innerHTML = "Proyecto"
+        boton2_2.innerHTML = "Codigo"
+        boton1_3.innerHTML = "Proyecto"
+        boton2_3.innerHTML = "Codigo"
+        boton1_4.innerHTML = "Proyecto"
+        boton2_4.innerHTML = "Codigo"
+        boton1_5.innerHTML = "Proyecto"
+        boton2_5.innerHTML = "Codigo"
+        boton1_6.innerHTML = "Proyecto"
+        boton2_6.innerHTML = "Codigo"
+        boton3.innerHTML = "Ver mas"
         despedida.innerHTML = "Gracias por tomarte el tiempo de leer mi portfolio! Lo agradezco de corazon, y espero que pronto podamos trabajar juntos.";
         switchLang = false;
     } else{
@@ -160,6 +247,33 @@ function langSwitcher(){
         desc4.innerHTML = descEng[3]
         desc5.innerHTML = descEng[4]
         desc6.innerHTML = descEng[5]
+        html1.innerHTML = descHtmlEng[0]
+        html2.innerHTML = descHtmlEng[1]
+        html3.innerHTML = descHtmlEng[1]
+        css1.innerHTML = descCssEng[0]
+        css2.innerHTML = descCssEng[1]
+        css3.innerHTML = descCssEng[2]
+        js1.innerHTML = descJsEng[0]
+        js2.innerHTML = descJsEng[1]
+        js3.innerHTML = descJsEng[2]
+        react1.innerHTML = descReactEng[0]
+        react2.innerHTML = descReactEng[1]
+        react3.innerHTML = descReactEng[2]
+        boots.innerHTML = "Framework management"
+        git.innerHTML = "Website management"
+        boton1_1.innerHTML = "Project"
+        boton2_1.innerHTML = "Code"
+        boton1_2.innerHTML = "Project"
+        boton2_2.innerHTML = "Code"
+        boton1_3.innerHTML = "Project"
+        boton2_3.innerHTML = "Code"
+        boton1_4.innerHTML = "Project"
+        boton2_4.innerHTML = "Code"
+        boton1_5.innerHTML = "Project"
+        boton2_5.innerHTML = "Code"
+        boton1_6.innerHTML = "Project"
+        boton2_6.innerHTML = "Code"
+        boton3.innerHTML = "See more"
         despedida.innerHTML = "Thank you for taking your time to read my portfolio! I'm grateful from the bottom of my heart, and i hope we get to work together soon."
         switchLang = true;
     }
